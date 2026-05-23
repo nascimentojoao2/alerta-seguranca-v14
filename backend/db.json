@@ -1,0 +1,182 @@
+{
+  "schools": [
+    {
+      "id": "sch-1",
+      "name": "Escola Municipal Aurora",
+      "address": "Rua das Flores, 120 - Centro",
+      "domain": "@aurora.edu.br",
+      "phone": "(16) 3333-1001",
+      "principal": "Marina Lopes",
+      "coords": {
+        "latitude": -21.1704,
+        "longitude": -47.8103
+      },
+      "contacts": [
+        "Portaria",
+        "Direção",
+        "Coordenação"
+      ],
+      "cameras": [
+        {
+          "id": "cam-aurora-1",
+          "name": "Intelbras VIP 3230 B SL",
+          "zone": "Entrada / teste cloud HTTPS",
+          "status": "online",
+          "isRealCamera": true,
+          "streamUrl": "https://cam-aurora.vortex7.com.br/stream.html?src=intelbras_vip_3230",
+          "ip": "192.168.1.18",
+          "protocol": "RTSP → go2rtc → Cloudflare Tunnel → WebRTC"
+        },
+        {
+          "id": "cam-aurora-2",
+          "name": "Pátio Interno",
+          "zone": "Pátio",
+          "status": "online"
+        },
+        {
+          "id": "cam-aurora-3",
+          "name": "Corredor Bloco A",
+          "zone": "Bloco A",
+          "status": "online"
+        },
+        {
+          "id": "cam-aurora-4",
+          "name": "Quadra",
+          "zone": "Área esportiva",
+          "status": "offline"
+        }
+      ]
+    },
+    {
+      "id": "sch-2",
+      "name": "Escola Estadual Horizonte",
+      "address": "Av. Brasil, 845 - Jardim América",
+      "domain": "@horizonte.edu.br",
+      "phone": "(16) 3333-1002",
+      "principal": "Eduardo Silva",
+      "coords": {
+        "latitude": -21.1762,
+        "longitude": -47.8072
+      },
+      "contacts": [
+        "Portaria",
+        "Coordenação",
+        "Equipe pedagógica"
+      ],
+      "cameras": [
+        {
+          "id": "cam-horizonte-1",
+          "name": "Entrada 01",
+          "zone": "Portaria",
+          "status": "online"
+        },
+        {
+          "id": "cam-horizonte-2",
+          "name": "Biblioteca",
+          "zone": "Biblioteca",
+          "status": "online"
+        },
+        {
+          "id": "cam-horizonte-3",
+          "name": "Corredor Central",
+          "zone": "Prédio Principal",
+          "status": "online"
+        },
+        {
+          "id": "cam-horizonte-4",
+          "name": "Área Externa",
+          "zone": "Lateral",
+          "status": "online"
+        }
+      ]
+    },
+    {
+      "id": "sch-3",
+      "name": "Escola Cívica Nova Geração",
+      "address": "Rua da Paz, 55 - Vila Esperança",
+      "domain": "@novageracao.edu.br",
+      "phone": "(16) 3333-1003",
+      "principal": "Patrícia Ramos",
+      "coords": {
+        "latitude": -21.1828,
+        "longitude": -47.8136
+      },
+      "contacts": [
+        "Recepção",
+        "Direção",
+        "Apoio"
+      ],
+      "cameras": [
+        {
+          "id": "cam-nova-1",
+          "name": "Recepção",
+          "zone": "Recepção",
+          "status": "online"
+        },
+        {
+          "id": "cam-nova-2",
+          "name": "Pátio Coberto",
+          "zone": "Pátio",
+          "status": "online"
+        },
+        {
+          "id": "cam-nova-3",
+          "name": "Saída dos alunos",
+          "zone": "Portão lateral",
+          "status": "offline"
+        },
+        {
+          "id": "cam-nova-4",
+          "name": "Laboratório",
+          "zone": "Laboratório",
+          "status": "online"
+        }
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "id": "director-aurora-1",
+      "name": "Marina Lopes",
+      "email": "diretora@aurora.edu.br",
+      "schoolId": "sch-1",
+      "phone": "(16) 99999-0001",
+      "department": "Direção Escolar",
+      "emergencyContact": "Central administrativa • (16) 3333-1001",
+      "password": "123456"
+    },
+    {
+      "id": "teacher-1",
+      "name": "Helena Martins",
+      "email": "helena@aurora.edu.br",
+      "schoolId": "sch-1",
+      "phone": "(16) 99999-1010",
+      "department": "Coordenação",
+      "emergencyContact": "Carlos Martins • (16) 99988-2020",
+      "password": "123456"
+    }
+  ],
+  "officers": [
+    {
+      "id": "gcm-1",
+      "name": "Marcos Vinícius Lima",
+      "email": "operador@gcm.sp.gov.br",
+      "badge": "GCM-01472",
+      "rank": "Inspetor Operacional",
+      "unit": "Base Central Escolar",
+      "phone": "(16) 3333-4400",
+      "bloodType": "O+",
+      "birthDate": "14/02/1988",
+      "cpf": "***.***.***-40",
+      "rg": "**.***.***-1",
+      "serviceNumber": "ESC-2026-014",
+      "shift": "Diurno • 06:00 às 18:00",
+      "address": "Base GCM • Centro Integrado de Monitoramento",
+      "emergencyContact": "Luciana Lima • (16) 99911-5544",
+      "qualification": "Monitoramento, despacho operacional e gestão de ocorrências",
+      "medicalNotes": "Sem restrições operacionais cadastradas",
+      "password": "123456"
+    }
+  ],
+  "incidents": []
+}

@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Alerta Segurança",
+    "slug": "alerta-seguranca-vortex7",
+    "version": "1.4.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.com.vortex7.alertaseguranca",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "O app usa sua localização para exibir a posição do usuário e das ocorrências no mapa.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsArbitraryLoadsInWebContent": true
+        }
+      }
+    },
+    "android": {
+      "package": "br.com.vortex7.alertaseguranca",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-foreground.png",
+        "backgroundColor": "#0B0D10"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "usesCleartextTraffic": true
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permita o acesso à sua localização para visualizar escolas, ocorrências e deslocamentos no mapa."
+        }
+      ]
+    ]
+  }
+}

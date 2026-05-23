@@ -1,0 +1,12 @@
+# Configuração de túnel fixo para a câmera da Escola Aurora.
+# Depois de criar o túnel nomeado no Cloudflare Zero Trust, ajuste:
+# - tunnel: ID ou nome do túnel
+# - credentials-file: caminho do arquivo .json criado pelo cloudflared
+
+tunnel: alerta-seguranca-cameras
+credentials-file: C:\Users\Joao\.cloudflared\alerta-seguranca-cameras.json
+
+ingress:
+  - hostname: cam-aurora.vortex7.com.br
+    service: http://localhost:1984
+  - service: http_status:404
